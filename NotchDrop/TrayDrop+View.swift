@@ -66,25 +66,15 @@ struct TrayView: View {
             )
     }
 
-    var text: String {
-        [
-            String(
-                format: NSLocalizedString("Drag files here to keep them for %@", comment: ""),
-                storageTime
-            ),
-            "&",
-            NSLocalizedString("Press Option to delete", comment: ""),
-        ].joined(separator: " ")
-    }
-
     var content: some View {
         Group {
             if tvm.isEmpty {
                 VStack(spacing: 8) {
                     Image(systemName: "tray.and.arrow.down.fill")
-                    Text(text)
+                        .font(.system(size: 18))
+                    Text(String(format: NSLocalizedString("Drag files here to keep them for %@", comment: ""), storageTime))
                         .multilineTextAlignment(.center)
-                        .font(.system(.headline, design: .rounded))
+                        .font(.system(size: 13).weight(.medium))
                 }
             } else {
                 ScrollView(.horizontal) {

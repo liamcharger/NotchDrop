@@ -25,7 +25,7 @@ struct DropItemView: View {
                 .frame(maxWidth: 64)
             Text(item.fileName)
                 .multilineTextAlignment(.center)
-                .font(.system(.footnote, design: .rounded))
+                .font(.system(.footnote))
                 .frame(maxWidth: 64)
         }
         .contentShape(Rectangle())

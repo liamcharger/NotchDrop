@@ -88,7 +88,9 @@ struct ShareView: View {
         )
         .opacity(0.5)
         .clipShape(RoundedRectangle(cornerRadius: vm.cornerRadius))
-        .overlay { dropLabel }
+        .overlay {
+            dropLabel
+        }
         .aspectRatio(1, contentMode: .fit)
         .contentShape(Rectangle())
         .changeEffect(
@@ -103,9 +105,11 @@ struct ShareView: View {
     var dropLabel: some View {
         VStack(spacing: 8) {
             Image(systemName: type.imageName)
+                .font(.system(size: 18))
             Text(type.title)
+                .font(.system(size: 13))
         }
-        .font(.system(.headline, design: .rounded))
+        .fontWeight(.medium)
         .contentShape(Rectangle())
         .onTapGesture {
             trigger = .init()

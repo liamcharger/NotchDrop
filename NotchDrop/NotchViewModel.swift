@@ -20,7 +20,7 @@ class NotchViewModel: NSObject, ObservableObject {
 
     let animation: Animation = .interactiveSpring(
         duration: 0.5,
-        extraBounce: 0.25,
+//        extraBounce: 0.25,
         blendDuration: 0.125
     )
     let notchOpenedSize: CGSize = .init(width: 600, height: 160)
@@ -41,7 +41,6 @@ class NotchViewModel: NSObject, ObservableObject {
 
     enum ContentType: Int, Codable, Hashable, Equatable {
         case normal
-        case menu
         case settings
     }
 

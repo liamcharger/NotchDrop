@@ -17,15 +17,12 @@ struct NotchContentView: View {
         ZStack {
             switch vm.contentType {
             case .normal:
-                HStack(spacing: vm.spacing) {
+                HStack(spacing: 8) {
                     ShareView(vm: vm, type: .airdrop)
                     ShareView(vm: vm, type: .generic)
                     TrayView(vm: vm)
                 }
                 .transition(.scale(scale: 0.8).combined(with: .opacity))
-            case .menu:
-                NotchMenuView(vm: vm)
-                    .transition(.scale(scale: 0.8).combined(with: .opacity))
             case .settings:
                 NotchSettingsView(vm: vm)
                     .transition(.scale(scale: 0.8).combined(with: .opacity))

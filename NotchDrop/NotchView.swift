@@ -60,8 +60,6 @@ struct NotchView: View {
             }
             .transition(
                 .scale.combined(
-                    with: .opacity
-                ).combined(
                     with: .offset(y: -vm.notchOpenedSize.height / 2)
                 ).animation(vm.animation)
             )
