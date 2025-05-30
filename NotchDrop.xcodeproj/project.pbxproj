@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5043819E2C3A8ACA000ED325 /* ColorfulX in Frameworks */ = {isa = PBXBuildFile; productRef = 5043819D2C3A8ACA000ED325 /* ColorfulX */; };
 		5044EE9C2C3B082300071C5C /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = 5044EE9B2C3B082300071C5C /* Pow */; };
-		5044EEA72C3B174100071C5C /* BitCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 5044EEA62C3B174100071C5C /* BitCollections */; };
-		5044EEA92C3B174100071C5C /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 5044EEA82C3B174100071C5C /* Collections */; };
-		5044EEAB2C3B174100071C5C /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5044EEAA2C3B174100071C5C /* DequeModule */; };
-		5044EEAD2C3B174100071C5C /* HashTreeCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 5044EEAC2C3B174100071C5C /* HashTreeCollections */; };
-		5044EEAF2C3B174100071C5C /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5044EEAE2C3B174100071C5C /* HeapModule */; };
-		504A5D802C59EC2D004E8297 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 504A5D7F2C59EC2D004E8297 /* LaunchAtLogin */; };
+		E0CBB31E2DEA15D200F181D2 /* BitCollections in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBB31D2DEA15D200F181D2 /* BitCollections */; };
+		E0CBB3202DEA15D200F181D2 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBB31F2DEA15D200F181D2 /* Collections */; };
+		E0CBB3222DEA15D200F181D2 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBB3212DEA15D200F181D2 /* DequeModule */; };
+		E0CBB3242DEA15D200F181D2 /* HashTreeCollections in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBB3232DEA15D200F181D2 /* HashTreeCollections */; };
+		E0CBB3262DEA15D200F181D2 /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBB3252DEA15D200F181D2 /* HeapModule */; };
+		E0CBB3292DEA15FF00F181D2 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBB3282DEA15FF00F181D2 /* LaunchAtLogin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,14 +39,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5044EEAD2C3B174100071C5C /* HashTreeCollections in Frameworks */,
-				5043819E2C3A8ACA000ED325 /* ColorfulX in Frameworks */,
+				E0CBB3242DEA15D200F181D2 /* HashTreeCollections in Frameworks */,
 				5044EE9C2C3B082300071C5C /* Pow in Frameworks */,
-				5044EEAF2C3B174100071C5C /* HeapModule in Frameworks */,
-				5044EEAB2C3B174100071C5C /* DequeModule in Frameworks */,
-				5044EEA92C3B174100071C5C /* Collections in Frameworks */,
-				504A5D802C59EC2D004E8297 /* LaunchAtLogin in Frameworks */,
-				5044EEA72C3B174100071C5C /* BitCollections in Frameworks */,
+				E0CBB3292DEA15FF00F181D2 /* LaunchAtLogin in Frameworks */,
+				E0CBB3262DEA15D200F181D2 /* HeapModule in Frameworks */,
+				E0CBB3222DEA15D200F181D2 /* DequeModule in Frameworks */,
+				E0CBB3202DEA15D200F181D2 /* Collections in Frameworks */,
+				E0CBB31E2DEA15D200F181D2 /* BitCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,14 +96,13 @@
 			);
 			name = NotchDrop;
 			packageProductDependencies = (
-				5043819D2C3A8ACA000ED325 /* ColorfulX */,
 				5044EE9B2C3B082300071C5C /* Pow */,
-				5044EEA62C3B174100071C5C /* BitCollections */,
-				5044EEA82C3B174100071C5C /* Collections */,
-				5044EEAA2C3B174100071C5C /* DequeModule */,
-				5044EEAC2C3B174100071C5C /* HashTreeCollections */,
-				5044EEAE2C3B174100071C5C /* HeapModule */,
-				504A5D7F2C59EC2D004E8297 /* LaunchAtLogin */,
+				E0CBB31D2DEA15D200F181D2 /* BitCollections */,
+				E0CBB31F2DEA15D200F181D2 /* Collections */,
+				E0CBB3212DEA15D200F181D2 /* DequeModule */,
+				E0CBB3232DEA15D200F181D2 /* HashTreeCollections */,
+				E0CBB3252DEA15D200F181D2 /* HeapModule */,
+				E0CBB3282DEA15FF00F181D2 /* LaunchAtLogin */,
 			);
 			productName = NotchDrop;
 			productReference = 504381802C3A86EA000ED325 /* NotchDrop.app */;
@@ -140,10 +137,9 @@
 			);
 			mainGroup = 504381772C3A86EA000ED325;
 			packageReferences = (
-				5043819C2C3A8ACA000ED325 /* XCRemoteSwiftPackageReference "ColorfulX" */,
 				5044EE9A2C3B082300071C5C /* XCRemoteSwiftPackageReference "Pow" */,
-				5044EEA52C3B174100071C5C /* XCRemoteSwiftPackageReference "swift-collections" */,
-				504A5D7E2C59EC2D004E8297 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+				E0CBB31C2DEA15D200F181D2 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				E0CBB3272DEA15FF00F181D2 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
 			);
 			productRefGroup = 504381812C3A86EA000ED325 /* Products */;
 			projectDirPath = "";
@@ -389,14 +385,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5043819C2C3A8ACA000ED325 /* XCRemoteSwiftPackageReference "ColorfulX" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Lakr233/ColorfulX";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.0;
-			};
-		};
 		5044EE9A2C3B082300071C5C /* XCRemoteSwiftPackageReference "Pow" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/EmergeTools/Pow";
@@ -405,63 +393,58 @@
 				minimumVersion = 1.0.4;
 			};
 		};
-		5044EEA52C3B174100071C5C /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+		E0CBB31C2DEA15D200F181D2 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-collections.git";
+			repositoryURL = "https://github.com/apple/swift-collections";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.1;
+				minimumVersion = 1.2.0;
 			};
 		};
-		504A5D7E2C59EC2D004E8297 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+		E0CBB3272DEA15FF00F181D2 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5043819D2C3A8ACA000ED325 /* ColorfulX */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5043819C2C3A8ACA000ED325 /* XCRemoteSwiftPackageReference "ColorfulX" */;
-			productName = ColorfulX;
-		};
 		5044EE9B2C3B082300071C5C /* Pow */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5044EE9A2C3B082300071C5C /* XCRemoteSwiftPackageReference "Pow" */;
 			productName = Pow;
 		};
-		5044EEA62C3B174100071C5C /* BitCollections */ = {
+		E0CBB31D2DEA15D200F181D2 /* BitCollections */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5044EEA52C3B174100071C5C /* XCRemoteSwiftPackageReference "swift-collections" */;
+			package = E0CBB31C2DEA15D200F181D2 /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = BitCollections;
 		};
-		5044EEA82C3B174100071C5C /* Collections */ = {
+		E0CBB31F2DEA15D200F181D2 /* Collections */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5044EEA52C3B174100071C5C /* XCRemoteSwiftPackageReference "swift-collections" */;
+			package = E0CBB31C2DEA15D200F181D2 /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = Collections;
 		};
-		5044EEAA2C3B174100071C5C /* DequeModule */ = {
+		E0CBB3212DEA15D200F181D2 /* DequeModule */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5044EEA52C3B174100071C5C /* XCRemoteSwiftPackageReference "swift-collections" */;
+			package = E0CBB31C2DEA15D200F181D2 /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = DequeModule;
 		};
-		5044EEAC2C3B174100071C5C /* HashTreeCollections */ = {
+		E0CBB3232DEA15D200F181D2 /* HashTreeCollections */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5044EEA52C3B174100071C5C /* XCRemoteSwiftPackageReference "swift-collections" */;
+			package = E0CBB31C2DEA15D200F181D2 /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = HashTreeCollections;
 		};
-		5044EEAE2C3B174100071C5C /* HeapModule */ = {
+		E0CBB3252DEA15D200F181D2 /* HeapModule */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5044EEA52C3B174100071C5C /* XCRemoteSwiftPackageReference "swift-collections" */;
+			package = E0CBB31C2DEA15D200F181D2 /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = HeapModule;
 		};
-		504A5D7F2C59EC2D004E8297 /* LaunchAtLogin */ = {
+		E0CBB3282DEA15FF00F181D2 /* LaunchAtLogin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 504A5D7E2C59EC2D004E8297 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			package = E0CBB3272DEA15FF00F181D2 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
 			productName = LaunchAtLogin;
 		};
 /* End XCSwiftPackageProductDependency section */

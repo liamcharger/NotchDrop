@@ -11,7 +11,7 @@ struct TrayView: View {
     @StateObject var vm: NotchViewModel
     @StateObject var tvm = TrayDrop.shared
 
-    @State private var targeting = false
+    @State private var isTargeting = false
 
     var storageTime: String {
         switch tvm.selectedFileStorageTime {
@@ -35,7 +35,7 @@ struct TrayView: View {
 
     var body: some View {
         panel
-            .onDrop(of: [.data], isTargeted: $targeting) { providers in
+            .onDrop(of: [.data], isTargeted: $isTargeting) { providers in
                 DispatchQueue.global().async { tvm.load(providers) }
                 return true
             }
@@ -43,14 +43,20 @@ struct TrayView: View {
 
     var panel: some View {
         RoundedRectangle(cornerRadius: vm.cornerRadius)
-            .strokeBorder(style: StrokeStyle(lineWidth: 4, dash: [10]))
-            .foregroundStyle(.white.opacity(0.1))
+            .strokeBorder(style: StrokeStyle(lineWidth: 3, dash: [9]))
+            .foregroundStyle(isTargeting ? .blue : .white.opacity(0.1))
             .background(loading)
+            .background {
+                RoundedRectangle(cornerRadius: vm.cornerRadius)
+                    .foregroundStyle(.blue)
+                    .opacity(isTargeting ? 0.3 : 0)
+            }
             .overlay {
                 content
                     .padding()
             }
             .animation(vm.animation, value: tvm.items)
+            .animation(vm.animation, value: isTargeting)
             .animation(vm.animation, value: tvm.isLoading)
     }
 

@@ -16,17 +16,21 @@ struct NotchView: View {
         switch vm.status {
         case .closed:
             var ans = CGSize(
-                width: vm.deviceNotchRect.width - 4,
-                height: vm.deviceNotchRect.height - 4
+                width: vm.deviceNotchRect.width,
+                height: vm.deviceNotchRect.height
             )
-            if ans.width < 0 { ans.width = 0 }
-            if ans.height < 0 { ans.height = 0 }
+            if ans.width < 0 {
+                ans.width = 0
+            }
+            if ans.height < 0 {
+                ans.height = 0
+            }
             return ans
         case .opened:
             return vm.notchOpenedSize
         case .popping:
             return .init(
-                width: vm.deviceNotchRect.width,
+                width: vm.deviceNotchRect.width + 4,
                 height: vm.deviceNotchRect.height + 4
             )
         }
@@ -45,7 +49,6 @@ struct NotchView: View {
             notch
                 .zIndex(0)
                 .disabled(true)
-                .opacity(vm.notchVisible ? 1 : 0.3)
             Group {
                 if vm.status == .opened {
                     VStack(spacing: vm.spacing) {
@@ -59,10 +62,12 @@ struct NotchView: View {
                 }
             }
             .transition(
-                .scale.combined(
+                vm.status == .closed ? .identity : .scale.combined(
                     with: .offset(y: -vm.notchOpenedSize.height / 2)
-                ).animation(vm.animation)
+                )
+                .animation(vm.animation)
             )
+            .blur(radius: vm.status == .opened ? 0 : 30)
         }
         .background(dragDetector)
         .animation(vm.animation, value: vm.status)
@@ -75,7 +80,7 @@ struct NotchView: View {
             .foregroundStyle(.black)
             .mask(notchBackgroundMaskGroup)
             .frame(
-                width: notchSize.width + notchCornerRadius * 2,
+                width: notchSize.width + notchCornerRadius * 4,
                 height: notchSize.height
             )
             .shadow(

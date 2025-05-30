@@ -6,7 +6,6 @@
 //  Last Modified by 冷月 on 2025/5/5.
 //
 
-import ColorfulX
 import SwiftUI
 import UniformTypeIdentifiers
 
