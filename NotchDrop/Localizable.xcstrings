@@ -612,6 +612,9 @@
         }
       }
     },
+    "Delete" : {
+
+    },
     "Drag files here to keep them for" : {
       "extractionState" : "manual",
       "localizations" : {

@@ -3,36 +3,81 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5044EE9C2C3B082300071C5C /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = 5044EE9B2C3B082300071C5C /* Pow */; };
 		E0CBB31E2DEA15D200F181D2 /* BitCollections in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBB31D2DEA15D200F181D2 /* BitCollections */; };
 		E0CBB3202DEA15D200F181D2 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBB31F2DEA15D200F181D2 /* Collections */; };
 		E0CBB3222DEA15D200F181D2 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBB3212DEA15D200F181D2 /* DequeModule */; };
 		E0CBB3242DEA15D200F181D2 /* HashTreeCollections in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBB3232DEA15D200F181D2 /* HashTreeCollections */; };
 		E0CBB3262DEA15D200F181D2 /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBB3252DEA15D200F181D2 /* HeapModule */; };
 		E0CBB3292DEA15FF00F181D2 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBB3282DEA15FF00F181D2 /* LaunchAtLogin */; };
+		E0DB92FD2DEA38C700BE9413 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92DD2DEA38C700BE9413 /* AppDelegate.swift */; };
+		E0DB92FE2DEA38C700BE9413 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92DF2DEA38C700BE9413 /* EventMonitor.swift */; };
+		E0DB92FF2DEA38C700BE9413 /* EventMonitors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92E02DEA38C700BE9413 /* EventMonitors.swift */; };
+		E0DB93002DEA38C700BE9413 /* Ext+FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92E12DEA38C700BE9413 /* Ext+FileProvider.swift */; };
+		E0DB93012DEA38C700BE9413 /* Ext+NSAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92E22DEA38C700BE9413 /* Ext+NSAlert.swift */; };
+		E0DB93022DEA38C700BE9413 /* Ext+NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92E32DEA38C700BE9413 /* Ext+NSImage.swift */; };
+		E0DB93032DEA38C700BE9413 /* Ext+NSScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92E42DEA38C700BE9413 /* Ext+NSScreen.swift */; };
+		E0DB93042DEA38C700BE9413 /* Ext+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92E52DEA38C700BE9413 /* Ext+URL.swift */; };
+		E0DB93052DEA38C700BE9413 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92E82DEA38C700BE9413 /* Language.swift */; };
+		E0DB93062DEA38C700BE9413 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92EA2DEA38C700BE9413 /* main.swift */; };
+		E0DB93072DEA38C700BE9413 /* NotchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92EB2DEA38C700BE9413 /* NotchContentView.swift */; };
+		E0DB93082DEA38C700BE9413 /* NotchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92ED2DEA38C700BE9413 /* NotchHeaderView.swift */; };
+		E0DB93092DEA38C700BE9413 /* NotchSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92EE2DEA38C700BE9413 /* NotchSettingsView.swift */; };
+		E0DB930A2DEA38C700BE9413 /* NotchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92EF2DEA38C700BE9413 /* NotchView.swift */; };
+		E0DB930B2DEA38C700BE9413 /* NotchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92F02DEA38C700BE9413 /* NotchViewController.swift */; };
+		E0DB930C2DEA38C700BE9413 /* NotchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92F12DEA38C700BE9413 /* NotchViewModel.swift */; };
+		E0DB930D2DEA38C700BE9413 /* NotchViewModel+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92F22DEA38C700BE9413 /* NotchViewModel+Events.swift */; };
+		E0DB930E2DEA38C700BE9413 /* NotchWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92F32DEA38C700BE9413 /* NotchWindow.swift */; };
+		E0DB930F2DEA38C700BE9413 /* NotchWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92F42DEA38C700BE9413 /* NotchWindowController.swift */; };
+		E0DB93102DEA38C700BE9413 /* PublishedPersist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92F52DEA38C700BE9413 /* PublishedPersist.swift */; };
+		E0DB93112DEA38C700BE9413 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92F62DEA38C700BE9413 /* Share.swift */; };
+		E0DB93122DEA38C700BE9413 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92F72DEA38C700BE9413 /* ShareView.swift */; };
+		E0DB93132DEA38C700BE9413 /* TrayDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92F82DEA38C700BE9413 /* TrayDrop.swift */; };
+		E0DB93142DEA38C700BE9413 /* TrayDropDropItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92F92DEA38C700BE9413 /* TrayDropDropItem.swift */; };
+		E0DB93152DEA38C700BE9413 /* TrayDropDropItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92FA2DEA38C700BE9413 /* TrayDropDropItemView.swift */; };
+		E0DB93162DEA38C700BE9413 /* TrayDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB92FB2DEA38C700BE9413 /* TrayDropView.swift */; };
+		E0DB93172DEA38C700BE9413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DB92DE2DEA38C700BE9413 /* Assets.xcassets */; };
+		E0DB93192DEA38C700BE9413 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E0DB92E72DEA38C700BE9413 /* InfoPlist.xcstrings */; };
+		E0DB931A2DEA38C700BE9413 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E0DB92E92DEA38C700BE9413 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		504381802C3A86EA000ED325 /* NotchDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0DB92DD2DEA38C700BE9413 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0DB92DE2DEA38C700BE9413 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0DB92DF2DEA38C700BE9413 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		E0DB92E02DEA38C700BE9413 /* EventMonitors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitors.swift; sourceTree = "<group>"; };
+		E0DB92E12DEA38C700BE9413 /* Ext+FileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+FileProvider.swift"; sourceTree = "<group>"; };
+		E0DB92E22DEA38C700BE9413 /* Ext+NSAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+NSAlert.swift"; sourceTree = "<group>"; };
+		E0DB92E32DEA38C700BE9413 /* Ext+NSImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+NSImage.swift"; sourceTree = "<group>"; };
+		E0DB92E42DEA38C700BE9413 /* Ext+NSScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+NSScreen.swift"; sourceTree = "<group>"; };
+		E0DB92E52DEA38C700BE9413 /* Ext+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+URL.swift"; sourceTree = "<group>"; };
+		E0DB92E62DEA38C700BE9413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0DB92E72DEA38C700BE9413 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		E0DB92E82DEA38C700BE9413 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		E0DB92E92DEA38C700BE9413 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		E0DB92EA2DEA38C700BE9413 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E0DB92EB2DEA38C700BE9413 /* NotchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchContentView.swift; sourceTree = "<group>"; };
+		E0DB92EC2DEA38C700BE9413 /* NotchDrop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotchDrop.entitlements; sourceTree = "<group>"; };
+		E0DB92ED2DEA38C700BE9413 /* NotchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchHeaderView.swift; sourceTree = "<group>"; };
+		E0DB92EE2DEA38C700BE9413 /* NotchSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchSettingsView.swift; sourceTree = "<group>"; };
+		E0DB92EF2DEA38C700BE9413 /* NotchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchView.swift; sourceTree = "<group>"; };
+		E0DB92F02DEA38C700BE9413 /* NotchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchViewController.swift; sourceTree = "<group>"; };
+		E0DB92F12DEA38C700BE9413 /* NotchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchViewModel.swift; sourceTree = "<group>"; };
+		E0DB92F22DEA38C700BE9413 /* NotchViewModel+Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotchViewModel+Events.swift"; sourceTree = "<group>"; };
+		E0DB92F32DEA38C700BE9413 /* NotchWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchWindow.swift; sourceTree = "<group>"; };
+		E0DB92F42DEA38C700BE9413 /* NotchWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchWindowController.swift; sourceTree = "<group>"; };
+		E0DB92F52DEA38C700BE9413 /* PublishedPersist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedPersist.swift; sourceTree = "<group>"; };
+		E0DB92F62DEA38C700BE9413 /* Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
+		E0DB92F72DEA38C700BE9413 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		E0DB92F82DEA38C700BE9413 /* TrayDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayDrop.swift; sourceTree = "<group>"; };
+		E0DB92F92DEA38C700BE9413 /* TrayDropDropItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayDropDropItem.swift; sourceTree = "<group>"; };
+		E0DB92FA2DEA38C700BE9413 /* TrayDropDropItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayDropDropItemView.swift; sourceTree = "<group>"; };
+		E0DB92FB2DEA38C700BE9413 /* TrayDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayDropView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		E0AA69FF2DE90392004C46E1 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 5043817F2C3A86EA000ED325 /* NotchDrop */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		E0AA69DF2DE90392004C46E1 /* NotchDrop */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (E0AA69FF2DE90392004C46E1 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = NotchDrop; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5043817D2C3A86EA000ED325 /* Frameworks */ = {
@@ -40,7 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0CBB3242DEA15D200F181D2 /* HashTreeCollections in Frameworks */,
-				5044EE9C2C3B082300071C5C /* Pow in Frameworks */,
 				E0CBB3292DEA15FF00F181D2 /* LaunchAtLogin in Frameworks */,
 				E0CBB3262DEA15D200F181D2 /* HeapModule in Frameworks */,
 				E0CBB3222DEA15D200F181D2 /* DequeModule in Frameworks */,
@@ -55,7 +99,7 @@
 		504381772C3A86EA000ED325 = {
 			isa = PBXGroup;
 			children = (
-				E0AA69DF2DE90392004C46E1 /* NotchDrop */,
+				E0DB92FC2DEA38C700BE9413 /* NotchDrop */,
 				504381812C3A86EA000ED325 /* Products */,
 				504381AD2C3ADDAB000ED325 /* Frameworks */,
 			);
@@ -76,6 +120,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E0DB92FC2DEA38C700BE9413 /* NotchDrop */ = {
+			isa = PBXGroup;
+			children = (
+				E0DB92DD2DEA38C700BE9413 /* AppDelegate.swift */,
+				E0DB92DE2DEA38C700BE9413 /* Assets.xcassets */,
+				E0DB92DF2DEA38C700BE9413 /* EventMonitor.swift */,
+				E0DB92E02DEA38C700BE9413 /* EventMonitors.swift */,
+				E0DB92E12DEA38C700BE9413 /* Ext+FileProvider.swift */,
+				E0DB92E22DEA38C700BE9413 /* Ext+NSAlert.swift */,
+				E0DB92E32DEA38C700BE9413 /* Ext+NSImage.swift */,
+				E0DB92E42DEA38C700BE9413 /* Ext+NSScreen.swift */,
+				E0DB92E52DEA38C700BE9413 /* Ext+URL.swift */,
+				E0DB92E62DEA38C700BE9413 /* Info.plist */,
+				E0DB92E72DEA38C700BE9413 /* InfoPlist.xcstrings */,
+				E0DB92E82DEA38C700BE9413 /* Language.swift */,
+				E0DB92E92DEA38C700BE9413 /* Localizable.xcstrings */,
+				E0DB92EA2DEA38C700BE9413 /* main.swift */,
+				E0DB92EB2DEA38C700BE9413 /* NotchContentView.swift */,
+				E0DB92EC2DEA38C700BE9413 /* NotchDrop.entitlements */,
+				E0DB92ED2DEA38C700BE9413 /* NotchHeaderView.swift */,
+				E0DB92EE2DEA38C700BE9413 /* NotchSettingsView.swift */,
+				E0DB92EF2DEA38C700BE9413 /* NotchView.swift */,
+				E0DB92F02DEA38C700BE9413 /* NotchViewController.swift */,
+				E0DB92F12DEA38C700BE9413 /* NotchViewModel.swift */,
+				E0DB92F22DEA38C700BE9413 /* NotchViewModel+Events.swift */,
+				E0DB92F32DEA38C700BE9413 /* NotchWindow.swift */,
+				E0DB92F42DEA38C700BE9413 /* NotchWindowController.swift */,
+				E0DB92F52DEA38C700BE9413 /* PublishedPersist.swift */,
+				E0DB92F62DEA38C700BE9413 /* Share.swift */,
+				E0DB92F72DEA38C700BE9413 /* ShareView.swift */,
+				E0DB92F82DEA38C700BE9413 /* TrayDrop.swift */,
+				E0DB92F92DEA38C700BE9413 /* TrayDropDropItem.swift */,
+				E0DB92FA2DEA38C700BE9413 /* TrayDropDropItemView.swift */,
+				E0DB92FB2DEA38C700BE9413 /* TrayDropView.swift */,
+			);
+			path = NotchDrop;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,12 +173,8 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				E0AA69DF2DE90392004C46E1 /* NotchDrop */,
-			);
 			name = NotchDrop;
 			packageProductDependencies = (
-				5044EE9B2C3B082300071C5C /* Pow */,
 				E0CBB31D2DEA15D200F181D2 /* BitCollections */,
 				E0CBB31F2DEA15D200F181D2 /* Collections */,
 				E0CBB3212DEA15D200F181D2 /* DequeModule */,
@@ -137,7 +215,6 @@
 			);
 			mainGroup = 504381772C3A86EA000ED325;
 			packageReferences = (
-				5044EE9A2C3B082300071C5C /* XCRemoteSwiftPackageReference "Pow" */,
 				E0CBB31C2DEA15D200F181D2 /* XCRemoteSwiftPackageReference "swift-collections" */,
 				E0CBB3272DEA15FF00F181D2 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
 			);
@@ -155,6 +232,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DB93172DEA38C700BE9413 /* Assets.xcassets in Resources */,
+				E0DB93192DEA38C700BE9413 /* InfoPlist.xcstrings in Resources */,
+				E0DB931A2DEA38C700BE9413 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +245,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DB92FD2DEA38C700BE9413 /* AppDelegate.swift in Sources */,
+				E0DB92FE2DEA38C700BE9413 /* EventMonitor.swift in Sources */,
+				E0DB92FF2DEA38C700BE9413 /* EventMonitors.swift in Sources */,
+				E0DB93002DEA38C700BE9413 /* Ext+FileProvider.swift in Sources */,
+				E0DB93012DEA38C700BE9413 /* Ext+NSAlert.swift in Sources */,
+				E0DB93022DEA38C700BE9413 /* Ext+NSImage.swift in Sources */,
+				E0DB93032DEA38C700BE9413 /* Ext+NSScreen.swift in Sources */,
+				E0DB93042DEA38C700BE9413 /* Ext+URL.swift in Sources */,
+				E0DB93052DEA38C700BE9413 /* Language.swift in Sources */,
+				E0DB93062DEA38C700BE9413 /* main.swift in Sources */,
+				E0DB93072DEA38C700BE9413 /* NotchContentView.swift in Sources */,
+				E0DB93082DEA38C700BE9413 /* NotchHeaderView.swift in Sources */,
+				E0DB93092DEA38C700BE9413 /* NotchSettingsView.swift in Sources */,
+				E0DB930A2DEA38C700BE9413 /* NotchView.swift in Sources */,
+				E0DB930B2DEA38C700BE9413 /* NotchViewController.swift in Sources */,
+				E0DB930C2DEA38C700BE9413 /* NotchViewModel.swift in Sources */,
+				E0DB930D2DEA38C700BE9413 /* NotchViewModel+Events.swift in Sources */,
+				E0DB930E2DEA38C700BE9413 /* NotchWindow.swift in Sources */,
+				E0DB930F2DEA38C700BE9413 /* NotchWindowController.swift in Sources */,
+				E0DB93102DEA38C700BE9413 /* PublishedPersist.swift in Sources */,
+				E0DB93112DEA38C700BE9413 /* Share.swift in Sources */,
+				E0DB93122DEA38C700BE9413 /* ShareView.swift in Sources */,
+				E0DB93132DEA38C700BE9413 /* TrayDrop.swift in Sources */,
+				E0DB93142DEA38C700BE9413 /* TrayDropDropItem.swift in Sources */,
+				E0DB93152DEA38C700BE9413 /* TrayDropDropItemView.swift in Sources */,
+				E0DB93162DEA38C700BE9413 /* TrayDropView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +421,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = NotchDrop;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Lakr Aream. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -347,6 +454,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = NotchDrop;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Lakr Aream. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,14 +493,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5044EE9A2C3B082300071C5C /* XCRemoteSwiftPackageReference "Pow" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/EmergeTools/Pow";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.4;
-			};
-		};
 		E0CBB31C2DEA15D200F181D2 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-collections";
@@ -412,11 +512,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5044EE9B2C3B082300071C5C /* Pow */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5044EE9A2C3B082300071C5C /* XCRemoteSwiftPackageReference "Pow" */;
-			productName = Pow;
-		};
 		E0CBB31D2DEA15D200F181D2 /* BitCollections */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E0CBB31C2DEA15D200F181D2 /* XCRemoteSwiftPackageReference "swift-collections" */;

@@ -1,5 +1,5 @@
 {
-  "originHash" : "18d1873b7d21ffb37f675e236304bb05391bd6300aea4e30816247c4d91a304b",
+  "originHash" : "a910ffd0ac890c543c3abf2a25c29ffbc0433baf73ca93d974bca2ed8fd9106e",
   "pins" : [
     {
       "identity" : "launchatlogin-modern",
@@ -8,15 +8,6 @@
       "state" : {
         "revision" : "a04ec1c363be3627734f6dad757d82f5d4fa8fcc",
         "version" : "1.1.0"
-      }
-    },
-    {
-      "identity" : "pow",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/EmergeTools/Pow",
-      "state" : {
-        "revision" : "f0d0f3e72d42beaf2b01f1cb798e1b55902814eb",
-        "version" : "1.0.4"
       }
     },
     {

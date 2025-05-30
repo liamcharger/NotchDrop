@@ -6,7 +6,6 @@
 //  Last Modified by 冷月 on 2025/5/5.
 //
 
-import Pow
 import SwiftUI
 import UniformTypeIdentifiers
 
@@ -60,7 +59,7 @@ struct ShareView: View {
     var dropArea: some View {
         RoundedRectangle(cornerRadius: vm.cornerRadius)
             .fill(type == .airdrop ? AnyShapeStyle(.blue.opacity(0.9)) : AnyShapeStyle(Material.regular))
-            .opacity(isTargeting ? 0.5 : 1)
+            .opacity(isTargeting ? 0.7 : 1)
             .overlay {
                 dropLabel
             }

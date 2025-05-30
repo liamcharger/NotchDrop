@@ -45,7 +45,6 @@ struct TrayView: View {
         RoundedRectangle(cornerRadius: vm.cornerRadius)
             .strokeBorder(style: StrokeStyle(lineWidth: 3, dash: [9]))
             .foregroundStyle(isTargeting ? .blue : .white.opacity(0.1))
-            .background(loading)
             .background {
                 RoundedRectangle(cornerRadius: vm.cornerRadius)
                     .foregroundStyle(.blue)
@@ -58,18 +57,6 @@ struct TrayView: View {
             .animation(vm.animation, value: tvm.items)
             .animation(vm.animation, value: isTargeting)
             .animation(vm.animation, value: tvm.isLoading)
-    }
-
-    var loading: some View {
-        RoundedRectangle(cornerRadius: vm.cornerRadius)
-            .foregroundStyle(.white.opacity(0.1))
-            .conditionalEffect(
-                .repeat(
-                    .glow(color: .blue, radius: 50),
-                    every: 1.5
-                ),
-                condition: tvm.isLoading > 0
-            )
     }
 
     var content: some View {
@@ -86,7 +73,7 @@ struct TrayView: View {
                 ScrollView(.horizontal) {
                     HStack(spacing: vm.spacing) {
                         ForEach(tvm.items) { item in
-                            DropItemView(item: item, vm: vm, tvm: tvm)
+                            DropItemView(item: item, vm: vm, tvm: tvm) // TODO: add loading state for items if needed
                         }
                     }
                     .padding(vm.spacing)
